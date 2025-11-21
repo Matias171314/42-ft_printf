@@ -6,7 +6,16 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 22:05:47 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/11/19 22:05:48 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/11/21 23:53:07 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
+int	ft_print_char(char c)
+{
+	int	count;
+
+	count = write(1, &c, 1);
+	return (count);
+}
